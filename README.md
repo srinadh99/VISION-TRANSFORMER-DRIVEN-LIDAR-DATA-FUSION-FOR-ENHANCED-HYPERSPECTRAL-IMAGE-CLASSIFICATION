@@ -14,6 +14,5 @@ Channel (HSI+LiDAR) | **98.05** | **96.96** | **97.38** | 263526
 Pixel (HSI+LiDAR) | 95.47 | 91.28 | 93.93 | 263526
 
 # Observations
-The MFT model is studied with only HSI images and with both HSI and LiDAR images for the land-cover classification task using Trento data. The metrics indicate that the MFT model with 'channel' tokenization performs better than the 'random' CLS and 'pixel' tokenized CLS. Moreover, the gain in performance is achieved with a few additional trainable parameters.
-
+We introduce ViT-SA and ViT-CA, new fusion frameworks within ViT for integrating HSI and LiDAR data for land cover classification. Combined with shared and modality-specific parameters, cross-attention fusion significantly improves performance, outperforming other methods on the Houston dataset. Late fusion proves superior, allowing early layers to focus on unimodal processing. Models and code will be made available, with future work exploring band selection and adaptive attention mechanisms.
 
